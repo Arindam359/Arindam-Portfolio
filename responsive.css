@@ -1,0 +1,195 @@
+@media only screen and (max-width: 600px) {
+    nav .right i{
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    nav .right ul {
+        background: #ff004f;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -165px;
+        width: 165px;
+        height: 100vh;
+        padding: 65px 40px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    #sidemenu.showsidebar{
+        right: 0;
+    }
+
+    nav .right ul li{
+        margin: 12px 0;
+    }
+    nav .right ul i{
+        position: absolute;
+        top: 20px;
+        left: 40px;
+    }
+    nav .left{
+        font-size: 1.1rem;
+        margin-left: -50px;
+    }
+    .first{
+        flex-direction: column;
+        align-items: center;
+    }
+    .rightsection{
+        width: 50%;
+        margin: 0;
+    }
+    .rightsection img{
+        width: 100%;
+    }
+    .leftsection{
+        order: 1;
+        width: 80%;
+    }
+    .leftsection p{
+        text-align: center;
+    }
+    .leftsection h1{
+        font-size: 23px;
+        text-align: center;
+    }
+    .logo{
+        width: 30%;
+        margin: 0 auto;
+    }
+
+    .about-col-1{
+        width: 60%;
+    }
+    .about-col-1 img{
+        width: 70%;
+    }
+    .about-col-1 h1{
+        font-size: 30px;
+    }
+    .about-col-2{
+        width: 70%;
+        margin-left: 18px;
+    }
+    .about-col-2 p{
+        font-size: 15px;
+    }
+    .tab-links{
+        margin: 0 30px;
+    }
+    .tab-contents{
+        margin-left: 0;
+    }
+    .icons ul li i{
+        font-size: 25px;
+    }
+    .icons ul li p{
+        font-size: 13px;
+    }
+    .tab-contents .icons ul li{
+        margin:10px 15px;
+    }
+    .tab-contents ul li{
+        font-size: 15px;
+    }
+    .edd{
+        height: 200px;
+        overflow: auto;
+        border: 2px solid black;
+    }
+    .projec-header{
+        width: 95%;
+        font-size: 20px;
+    }
+    .projects-contet{
+        flex-direction: column;
+        width: 90%;
+    }
+    .project-col-1{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .project-col-2{
+        width: 90%;
+        margin: 30px auto 0;
+
+    }
+    .project-col-2 img{
+        width: 100%;
+    }
+    .project-col-2 .links a{
+        font-size: 15px;
+        margin: 0 18px;
+    }
+    .ordr{
+        order: 2;
+    }
+    .contact-row{
+        flex-direction: column;
+        width: 90%;
+    }
+    .contact-left{
+        width: 100%;
+    }
+    .contact-right{
+        width: 100%;
+    }
+    #msg{
+        margin: -30px 0 60px;
+    }
+}
+/* .......for medium ......... */
+@media (min-width:601px) and (max-width:1180px) {
+    .left{
+         margin: 0;
+    }
+    .right{
+         margin: 0;
+    }
+    .rightsection{
+        margin-top: 90px;
+    }
+    .right ul li{
+        margin: 10px;
+    }
+    .about-col-1{
+        width: 25%;
+    }
+    .about-col-1 h1{
+        font-size: 32px;
+    }
+    .about-col-2{
+        width: 50%;
+    }
+    .icons ul li i{
+        font-size: 30px;
+    }
+    .skll{
+        margin-left: -20px;
+    }
+    .icons ul{
+        justify-content: center;
+    }
+    .edd{
+        height: 220px;
+        overflow: auto;
+        border: 2px solid black;
+    }
+    .project-col-1, .project-col-2{
+        width: 45%;
+    }
+    .projec-header{
+        width: 80%;
+    }
+    .projects-contet{
+        width: 85%;
+    }
+    .contact-row{
+        width: 100%;
+    }
+    .contact-left{
+        width: 35%;
+    }
+}

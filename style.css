@@ -1,0 +1,325 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 51);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    position: sticky;
+    top:0;
+    z-index: 2;
+    height: 60px;
+     background-color: rgb(3, 3, 66);
+}
+.left a{
+    text-decoration: none;
+    color: white;
+}
+.left span{
+    color: rgb(227, 61, 61);
+}
+nav{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0;
+   
+    
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    list-style: none;
+}
+nav ul li{
+    margin: 10px 20px;
+}
+
+.left{
+    font-size: 1.3rem;
+    margin-left: -100px;
+}
+.right{
+    margin-right: -50px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    position: relative;
+}
+nav ul li a::after{
+    content:'';
+    width:0;
+    height: 3px;
+    background: rgb(255, 29, 29);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.3s;
+    
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.first{
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+    
+}
+.leftsection{
+    width: 38%;
+}
+.leftsection .logo a i:hover{
+    scale: 1.1;
+}
+.rightsection{
+    width: 30%;
+    margin-top: 20px;
+}
+.rightsection img{
+    width: 70%;
+}
+.leftsection h1{
+    font-size: 2.5rem;
+    margin-top: 70px;
+    margin-bottom: 25px;
+}
+.leftsection .logo a{
+    margin: 0 10px;
+}
+.leftsection p{
+    margin: 20px 0;
+    font-size: 12.5px;
+}
+/* ........about........ */
+.about{
+    background-color: whitesmoke;
+    padding: 50px 0;
+    color:black;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.about-col-1{
+    width: 15%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+    border: solid 1px rgb(0, 0, 0);
+}
+.about-col-2{
+    width: 45%;
+    height: 70vh;
+    margin-left: 60px;
+    margin-top: 75px;
+}
+.about-heading{
+    color: rgb(0, 0, 0);
+    margin: 40px 0;
+    font-size: 36px;
+}
+.about-col-2 .fst{
+    margin: 10px 0;
+}
+.tab-titels{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin: 0 50px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 4px;
+    background:rgb(255, 29, 29) ;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.3s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents .icons ul{
+    display: flex;
+    
+}
+.tab-contents .icons ul li{
+    list-style: none;
+    margin: 30px 30px;
+}
+.tab-contents .icons ul li p{
+    margin-top: 10px;
+    margin-left:-5px;
+}
+.tab-contents .icons ul li .fa-brands:hover{
+    scale: 1.2;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 20px 10px;
+}
+.tab-contents ul li span{
+    color: rgb(227, 61, 61);
+}
+.tab-contents{
+    margin-left: 30px;
+    display: none;
+}
+.active-tab{
+    display: block;
+}
+/* .......Project........ */
+.projects{
+    background-color: whitesmoke;
+    color: black;
+    padding: 120px 50px 50px;
+
+}
+.projec-header{
+    width: 61%;
+    margin: 20px auto;
+    font-size: 25px;
+}
+.projec-header p{
+    margin: 7px 0;
+}
+.projects-contet{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px auto 70px;
+    width: 70%;
+}
+.project-col-1{
+    width: 30%;
+}
+.project-col-1 h2{
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+.project-col-2{
+    width: 35%;
+    margin-top: 10px;
+}
+.project-col-2 img{
+    width: 91%;
+    border-radius: 10px;
+}
+.links{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 91%;
+}
+.links a{
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 30px;
+    color: black;
+}
+.links a:hover{
+    color: rgb(166, 11, 11);
+}
+.project-col-1 p{
+    text-align: center;
+}
+.contact{
+    background-color: rgb(0, 0, 51);
+    color: white;
+    padding: 50px 50px;
+    height: 85vh;
+}
+.contact-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+}
+.contact-left{
+    width: 30%;
+}
+.contact-right{
+    width: 55%;
+}
+.contact-left p{
+    margin-bottom: 15px;
+}
+.btn{
+    display: block;
+    margin: 50px 0;
+    width: fit-content;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(227, 61, 61);
+}
+.about-heading.con{
+    color: rgb(227, 61, 61);
+}
+.contact-right form{
+    width: 100%;
+    margin-top: 30px;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: rgb(22, 18, 71);
+    padding: 15px;
+    margin: 10px 0;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+form .btn{
+    padding: 15px 60px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    border: 2px solid rgb(227, 61, 61);
+    transition: .2s;
+}
+form .btn:hover{
+    scale: 1.03;
+}
+nav .right i{
+    display: none;
+}
+#msg{
+    color: rgb(196, 196, 196);
+    margin-top: -30px;
+    display: block;
+}
